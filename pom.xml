@@ -563,18 +563,18 @@
           <artifactId>buildnumber-maven-plugin</artifactId>
           <version>1.3</version>
         </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>findbugs-maven-plugin</artifactId>
-          <version>3.0.0</version>
-          <!--NOTE: Findbugs 3.0.0 requires jdk7-->
-          <configuration>
-            <excludeFilterFile>${project.basedir}/../dev-support/findbugs-exclude.xml</excludeFilterFile>
-            <findbugsXmlOutput>true</findbugsXmlOutput>
-            <xmlOutput>true</xmlOutput>
-            <effort>Max</effort>
-          </configuration>
-        </plugin>
+<!--        <plugin>-->
+<!--          <groupId>org.codehaus.mojo</groupId>-->
+<!--          <artifactId>findbugs-maven-plugin</artifactId>-->
+<!--          <version>3.0.0</version>-->
+<!--          &lt;!&ndash;NOTE: Findbugs 3.0.0 requires jdk7&ndash;&gt;-->
+<!--          <configuration>-->
+<!--            <excludeFilterFile>${project.basedir}/../dev-support/findbugs-exclude.xml</excludeFilterFile>-->
+<!--            <findbugsXmlOutput>true</findbugsXmlOutput>-->
+<!--            <xmlOutput>true</xmlOutput>-->
+<!--            <effort>Max</effort>-->
+<!--          </configuration>-->
+<!--        </plugin>-->
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>build-helper-maven-plugin</artifactId>

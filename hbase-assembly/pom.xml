@@ -121,32 +121,32 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>exec-maven-plugin</artifactId>
-        <version>1.4.0</version>
-        <executions>
-          <execution>
-            <id>concat-NOTICE-files</id>
-            <phase>package</phase>
-            <goals>
-              <goal>exec</goal>
-            </goals>
-            <configuration>
-              <executable>env</executable>
-              <arguments>
-                <argument>bash</argument>
-                <argument>-c</argument>
-                <argument>cat maven-shared-archive-resources/META-INF/NOTICE \
-                  `find ${project.build.directory}/dependency -iname NOTICE -or -iname NOTICE.txt` \
-                </argument>
-              </arguments>
-              <outputFile>${project.build.directory}/NOTICE.aggregate</outputFile>
-              <workingDirectory>${project.build.directory}</workingDirectory>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
+<!--      <plugin>-->
+<!--        <groupId>org.codehaus.mojo</groupId>-->
+<!--        <artifactId>exec-maven-plugin</artifactId>-->
+<!--        <version>1.4.0</version>-->
+<!--        <executions>-->
+<!--          <execution>-->
+<!--            <id>concat-NOTICE-files</id>-->
+<!--            <phase>package</phase>-->
+<!--            <goals>-->
+<!--              <goal>exec</goal>-->
+<!--            </goals>-->
+<!--            <configuration>-->
+<!--              <executable>env</executable>-->
+<!--              <arguments>-->
+<!--                <argument>bash</argument>-->
+<!--                <argument>-c</argument>-->
+<!--                <argument>cat maven-shared-archive-resources/META-INF/NOTICE \-->
+<!--                  `find ${project.build.directory}/dependency -iname NOTICE -or -iname NOTICE.txt` \-->
+<!--                </argument>-->
+<!--              </arguments>-->
+<!--              <outputFile>${project.build.directory}/NOTICE.aggregate</outputFile>-->
+<!--              <workingDirectory>${project.build.directory}</workingDirectory>-->
+<!--            </configuration>-->
+<!--          </execution>-->
+<!--        </executions>-->
+<!--      </plugin>-->
       <!-- /end building aggregation of NOTICE files -->
     </plugins>
   </build>
